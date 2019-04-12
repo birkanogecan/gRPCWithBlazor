@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Weather;
+
+service Weatherer {
+  rpc GetWeather (WeatherRequest) returns (WeatherReply) {}
+}
+
+message WeatherRequest {
+  string cityid = 1;
+}
+
+message WeatherReply {
+  int32 temperature = 1;
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorComponentsSample", "RazorComponentsSample\RazorComponentsSample.csproj", "{A1BDFFF7-41A0-49A5-BE77-0B6EDB3D0AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.Server", "gRPC\gRPC.Server\gRPC.Server.csproj", "{B71E4018-8451-42C9-8749-0B4E00C98B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1BDFFF7-41A0-49A5-BE77-0B6EDB3D0AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BDFFF7-41A0-49A5-BE77-0B6EDB3D0AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BDFFF7-41A0-49A5-BE77-0B6EDB3D0AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BDFFF7-41A0-49A5-BE77-0B6EDB3D0AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71E4018-8451-42C9-8749-0B4E00C98B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71E4018-8451-42C9-8749-0B4E00C98B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71E4018-8451-42C9-8749-0B4E00C98B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71E4018-8451-42C9-8749-0B4E00C98B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E74870C-74E3-4D70-AF04-EF47EFAD1D0D}
+	EndGlobalSection
+EndGlobal

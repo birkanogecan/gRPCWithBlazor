@@ -1,0 +1,42 @@
+@page "/fetchdata"
+@using RazorComponentsSample.Services
+@inject WeatherForecastService ForecastService
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Temp. (C)</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@forecasts.Temperature</td>
+                </tr>
+            
+        </tbody>
+    </table>
+}
+<button class="btn btn-primary" onclick="@GetWeather">Get Data</button>
+@functions {
+    WeatherForecast forecasts;
+
+    protected override async Task OnInitAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync();
+    }
+
+    async void GetWeather()
+    {
+       forecasts = await ForecastService.GetForecastAsync();
+    }
+}
